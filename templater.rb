@@ -2,7 +2,11 @@ require File.join(File.dirname(__FILE__), 'core_extensions.rb')
 
 initialize_templater
 
+<<<<<<< HEAD
 required_recipes = %w(default jquery mongoid haml rspec factory_girl remarkable)
+=======
+required_recipes = %w(default jquery formtastic haml rspec factory_girl remarkable)
+>>>>>>> c378e9f... added formtastic
 required_recipes.each {|required_recipe| apply recipe(required_recipe)}
 
 load_options
